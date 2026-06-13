@@ -1,0 +1,361 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+
+    background:linear-gradient(
+        to bottom,
+        #fff8e7,
+        #ffe89c
+    );
+
+    scroll-behavior:smooth;
+}
+
+/* ========================= */
+/* PORTADA */
+/* ========================= */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    animation:fadeIn 2s;
+}
+
+.foto-yeimi{
+
+    width:250px;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #ffd54f;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.2);
+
+    margin-bottom:20px;
+}
+
+h1{
+
+    font-size:5rem;
+
+    margin-bottom:10px;
+}
+
+span{
+
+    font-size:5rem;
+}
+
+.hero p{
+
+    font-size:1.7rem;
+
+    margin-bottom:30px;
+}
+
+button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    background:#ffd54f;
+
+    cursor:pointer;
+
+    font-size:1.2rem;
+
+    border-radius:15px;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+}
+
+a{
+
+    text-decoration:none;
+}
+
+/* ========================= */
+/* CARTA */
+/* ========================= */
+
+.letter{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:100px 40px;
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.1);
+
+    margin-bottom:120px;
+}
+
+.letter h2{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    color:#6f4e37;
+
+    margin-bottom:40px;
+}
+
+.letter p{
+
+    font-size:1.3rem;
+
+    line-height:2;
+
+    color:#333;
+}
+
+/* ========================= */
+/* THINGS THAT REMIND ME */
+/* ========================= */
+
+.memories{
+
+    padding:100px 30px;
+
+    text-align:center;
+}
+
+.memories h2{
+
+    font-size:4rem;
+
+    color:#6f4e37;
+
+    margin-bottom:60px;
+}
+
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+.card{
+
+    width:280px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+    text-align:center;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+.card h3{
+
+    font-size:1.5rem;
+
+    margin-top:15px;
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    margin:0;
+}
+
+.card{
+
+    font-size:3rem;
+}
+
+/* ========================= */
+/* ANIMACIONES */
+/* ========================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* ================= */
+/* MEMORIES */
+/* ================= */
+
+.memories{
+
+    padding:120px 8%;
+
+}
+
+.memories h2{
+
+    text-align:center;
+
+    font-size:4rem;
+
+    color:#6f4e37;
+
+    margin-bottom:100px;
+}
+
+.memory-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:80px;
+
+    margin-bottom:120px;
+}
+
+.memory-card img{
+
+    width:280px;
+
+    max-width:100%;
+
+    border:8px solid white;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.memory-card img:hover{
+
+    transform:scale(1.05);
+}
+
+.memory-text{
+
+    max-width:600px;
+}
+
+.memory-text h3{
+
+    font-size:2.5rem;
+
+    color:#6f4e37;
+
+    margin-bottom:20px;
+}
+
+.memory-text p{
+
+    font-size:1.5rem;
+
+    line-height:1.8;
+
+    color:#333;
+}
+
+.reverse{
+
+    flex-direction:row-reverse;
+}
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media(max-width:900px){
+
+    .memory-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:30px;
+    }
+
+    .reverse{
+
+        flex-direction:column;
+    }
+
+    .memory-card img{
+
+        width:220px;
+    }
+
+    .memory-text h3{
+
+        font-size:2rem;
+    }
+
+    .memory-text p{
+
+        font-size:1.2rem;
+    }
+}
+/* Imagen collage */
+img[src*="You are my Favorite Person"]{
+    width: 850px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Imagen de Frappe */
+img[src*="Frapeunido3gatos"]{
+    width: 700px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
